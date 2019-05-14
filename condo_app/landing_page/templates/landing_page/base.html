@@ -15,7 +15,9 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel='shortcut icon' type='image/png' href="{% static 'favicon.ico' %}" />
-    <link rel="stylesheet" href="">
+    {% block header %}
+    {% endblock %}
+
 </head>
 
 <body>
@@ -26,7 +28,7 @@
     {% block body %}
     {% endblock %}
 
-    <script src="" async defer></script>
+
 </body>
 
 </html>

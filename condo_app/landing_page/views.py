@@ -6,4 +6,4 @@ from django.http import HttpRequest, HttpResponse
 
 def index(request):
     # return HttpResponse("Hello, you are in the main landing page")
-    return render(request, 'landing_page/index.html')
+    return render(request, 'landing_page/signup.html')
