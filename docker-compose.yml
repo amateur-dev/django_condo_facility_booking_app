@@ -14,20 +14,20 @@ services:
     environment:
       LC_ALL: "C.UTF-8"
       LANG: "C.UTF-8"
-    depends_on:
-      - db
-    networks: ['mynetwork']
+    # depends_on:
+    #   - db
+    # networks: ['mynetwork']
 
-  db:
-    image: postgres
-    ports:
-      - "5432:5432"
-    environment:
-      POSTGRES_PASSWORD: mysecretpassword
-      POSTGRES_USER: dipesh
-      POSTGRES_DB: condo_app
-    networks: 
-      - mynetwork
+  # db:
+  #   image: postgres
+  #   ports:
+  #     - "5432:5432"
+  #   environment:
+  #     POSTGRES_PASSWORD: mysecretpassword
+  #     POSTGRES_USER: dipesh
+  #     POSTGRES_DB: condo_app
+  #   networks: 
+  #     - mynetwork
 
-networks: 
-  mynetwork:
+# networks: 
+#   mynetwork:
