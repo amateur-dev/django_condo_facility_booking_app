@@ -32,8 +32,6 @@ ALLOWED_HOSTS = ["0.0.0.0", "localhost"]
 
 INSTALLED_APPS = [
     'landing_page.apps.LandingPageConfig',
-    'tennis_app.apps.TennisAppConfig',
-    'user_authentication.apps.UserAuthenticationConfig',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
